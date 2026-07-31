@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+@keyframes frame-glow {
+  0%, 100% {
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3), 0 0 1.5rem rgba(168, 200, 255, 0.2);
+  }
+}
+
+.portrait-frame {
+  animation: frame-glow 3s ease-in-out infinite;
+}
